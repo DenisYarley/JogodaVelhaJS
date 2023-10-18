@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    padding: 10px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container div{
+    display: flex;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: solid 1px black;
+    margin: 1px 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o::after{
+    content: "O";
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #000;
+    font-size: 60px;  
+}
+
+.x::after{
+    content: "X";
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #000;
+    font-size: 60px;  
+}
