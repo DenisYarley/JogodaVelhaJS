@@ -26,9 +26,8 @@ body{
 .square{
     width: 100px;
     height: 100px;
-    background-color: gray;
-    border: solid 1px black;
-    margin: 1px 1px;
+    background-color: rgb(191, 224, 226);
+    border: solid 2px rgb(35, 37, 37);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -37,7 +36,7 @@ body{
 
 .o::after{
     content: "O";
-    color: red;
+    color: rgb(255, 255, 255);;
     font-weight: bold;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: #000;
@@ -46,9 +45,9 @@ body{
 
 .x::after{
     content: "X";
-    color: red;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #000000;
     font-size: 60px;  
 }

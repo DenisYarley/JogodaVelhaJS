@@ -1,12 +1,13 @@
 let board = ["","","","","","","","",""];
 let playerTime = 0;
 let symbols = ["o","x"];
-
+let vez = playerTime
 function inserir(elemento){
     
 
     if(board[elemento] == ""){
         board[elemento] = symbols[playerTime]
+        vez = playerTime
         playerTime = playerTime == 0 ? 1 : 0
     }
 
@@ -34,7 +35,7 @@ ganhou = ()=>{
         if(board[num1] == board[num2] &&
         board[num1] == board[num3] && board[num1] != ""){
             setTimeout(()=>{
-                alert("Ganhou")
+                alert("Jogador (" + symbols[vez] + ") ganhou")
                 window.location.reload()
             },100)
             
